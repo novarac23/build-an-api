@@ -46,6 +46,6 @@ class StaffsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def staff_params
-      params.fetch(:staff, {})
+      params.fetch(:staff, {}).permit(:first_name, :last_name, :title, :education, :age, :username, :phone, :salary)
     end
 end
