@@ -7,9 +7,9 @@ module Api
 
       # GET /staffs
       def index
-        @staffs = Staff.all
+        staffs = Staff.all
 
-        render json: @staffs
+        render json: staffs
       end
 
       # GET /staffs/1
